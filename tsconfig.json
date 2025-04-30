@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "http/*": ["./supabase/functions/import_map.json"],
+      "../utils/battlenet.ts": ["./supabase/functions/utils/battlenet.ts"],
+      "../utils/config.ts": ["./supabase/functions/auth/battlenet/utils/config.ts"]
+    },
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "strict": true
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}
